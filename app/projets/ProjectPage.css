@@ -6,21 +6,31 @@
   font-weight: bold;
   padding: 10px 20px;
   border: 1px solid #333;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
-  width: 200px;
+  width: 300px;
+  height: 60px;
   background-color: black;
+  font-family: 'REM', sans-serif;
 }
 
 .ProjectPage .project-link:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: chocolate;
+  color: black;
+ 
 }
 .ProjectPage {
   display: flex;
   flex-direction: column;
+  min-height: 90vh;
   align-items: center;
-  justify-content: center;
   height: fit-content;
   text-align: center;
+  font-family: 'REM', sans-serif;
+}
+.text{
+  font-family: 'REM', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  font-size: 50px;
 }

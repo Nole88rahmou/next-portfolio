@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,16 +7,24 @@
   padding: 20px 50px;
   background-color: black;
   color: chocolate;
+  text-decoration: none;
+  font-family: 'REM', sans-serif;
 }
 
 .header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: chocolate;
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
 }
 
 .header .nav-links {
   display: flex;
   gap: 15px;
+  text-decoration: none;
+  color: chocolate;
+  font-family: 'REM', sans-serif;
 }
 
 .header .nav-links a {
@@ -24,4 +34,5 @@
 
 .header .nav-links a:hover {
   color: #ddd;
+
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 function page() {
   return (
     <div className="reviews-page">
-      <h1>Témoignages</h1>
+      <h1 className="text-t">Témoignages</h1>
       <nav>
         <Link href="/reviews/reviews" className="reviews-link">
           Voir les témoignages

@@ -8,7 +8,6 @@ import "./SetReviews.css";
 
 function page() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [review, setReview] = useState("");
   const [error, setError] = useState("");
 
@@ -17,21 +16,14 @@ function page() {
 
   const submitReview = () => {
     // Vérification des validations
-    if (name.trim() === "" || email.trim() === "" || review.trim() === "") {
+    if (name.trim() === "" || review.trim() === "") {
       setError("Veuillez remplir tous les champs");
-      return;
-    }
-
-    // Vérification de l'email au format valide
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email.match(emailRegex)) {
-      setError("Veuillez saisir une adresse e-mail valide");
       return;
     }
 
     // Save review to redux
 
-    dispatch(addReview({ name, email, review }));
+    dispatch(addReview({ name, review }));
 
     // Redirection vers la page d'accueil
 
@@ -40,20 +32,17 @@ function page() {
 
   return (
     <div className="set-reviews-container">
+      <div>
+        <h1 className="text-avis">Ajouter votre Avis</h1>
+      </div>
       <input
         className="set-reviews-input"
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Nom"
       />
-      <input
-        className="set-reviews-input"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-      />
       <textarea
-        className="set-reviews-input"
+        className="set-reviews-input-avis"
         value={review}
         onChange={(e) => setReview(e.target.value)}
         placeholder="Avis"

@@ -15,7 +15,7 @@ function page() {
 
   return (
     <div className="ProjectPage">
-      <h1>Mes Projects</h1>
+      <h1 className="text">Mes Projects</h1>
       <nav>
         {projects.map((project, i) => (
           <Link

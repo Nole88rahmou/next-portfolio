@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  min-height: 90vh;
+
 }
 
 .set-reviews-input {
-  width: 80%;
+  width: 40%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -16,8 +17,20 @@
   resize: none;
   color: aliceblue;
   background-color: black;
+  font-family: 'REM', sans-serif;
 }
-
+.set-reviews-input-avis{
+  width: 40%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  resize: none;
+  color: aliceblue;
+  background-color: black;
+  font-family: 'REM', sans-serif;
+}
 .set-reviews-button {
   background-color: chocolate;
   color: #fff;
@@ -26,4 +39,10 @@
   padding: 10px 20px;
   cursor: pointer;
   margin-top: 20px;
+  font-family: 'REM', sans-serif;
+}
+.text-avis{
+  margin-bottom: 25px;
+  margin-top: 20%;
+  font-family: 'REM', sans-serif;
 }

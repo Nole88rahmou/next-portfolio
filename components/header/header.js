@@ -4,7 +4,9 @@ import Link from "next/link";
 function Header() {
   return (
     <header className="header">
-      <div className="logo">Meradji Abderrahim</div>
+      <div >
+         <Link href= "/" className="logo"> Meradji Abderrahim</Link>
+      </div>
       <nav className="nav-links">
         <Link href="/">Accueil</Link>
         <Link href="/projets">Projets</Link>

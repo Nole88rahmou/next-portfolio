@@ -19,7 +19,7 @@ const reviewSlice = createSlice({
     },
 
     editReview: (state, action) => {
-      state.editingIndex = action.payload;
+      state.editingIndex = action.payload.id;
     },
 
     saveReview: (state, action) => {

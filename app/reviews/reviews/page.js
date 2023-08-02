@@ -1,18 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import "./Reviews.css";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteReview, editReview, saveReview } from "@/redux/feature/review";
-import { useState, useEffect } from "react";
 
-function page() {
+function Page() {
   const reviews = useSelector((state) => state.review.reviews);
   const editingIndex = useSelector((state) => state.review.editingIndex);
   const dispatch = useDispatch();
-  const [data, setData] = useState({
-    name: "",
-    review: "",
-  });
+  const [data, setData] = useState("");
+
+  const handleEditReview = (index) => () => {
+    dispatch(editReview({ id: index }));
+    setData(reviews[index].review);
+  };
 
   return (
     <div className="reviews-container">
@@ -23,12 +25,12 @@ function page() {
             <>
               <textarea
                 className="review-input"
-                value={data.review}
-                onChange={(e) => setData({ ...data, review: e.target.value })}
+                value={data}
+                onChange={(e) => setData(e.target.value)}
               />
               <button
                 className="review-button"
-                onClick={() => dispatch(saveReview(data.review))}
+                onClick={() => dispatch(saveReview(data))}
               >
                 Sauvegarder
               </button>
@@ -38,7 +40,7 @@ function page() {
               <p>{review.review}</p>
               <button
                 className="review-button"
-                onClick={() => dispatch(editReview(index))}
+                onClick={handleEditReview(index)}
               >
                 Modifier
               </button>
@@ -56,4 +58,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

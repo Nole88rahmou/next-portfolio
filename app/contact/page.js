@@ -21,8 +21,18 @@ function page() {
     });
   };
 
+  const validateEmail = (email) => {
+    var re =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (!validateEmail(state.email)) {
+      setMessage("Veuillez entrer une adresse email valide.");
+      return;
+    }
 
     console.log(state);
 
@@ -32,6 +42,8 @@ function page() {
   };
 
   return (
+    <div>
+      <h1 className="text-contact">Contactez-moi !!</h1>
     <form onSubmit={handleSubmit}>
       <label>
         Nom:
@@ -40,7 +52,6 @@ function page() {
           name="nom"
           value={state.nom}
           onChange={handleInputChange}
-          required
         />
       </label>
       <label>
@@ -50,7 +61,6 @@ function page() {
           name="email"
           value={state.email}
           onChange={handleInputChange}
-          required
         />
       </label>
       <label>
@@ -59,12 +69,12 @@ function page() {
           name="message"
           value={state.message}
           onChange={handleInputChange}
-          required
         />
       </label>
       <button type="submit">Envoyer</button>
       {message && <p>{message}</p>}
     </form>
+    </div>
   );
 }
 
