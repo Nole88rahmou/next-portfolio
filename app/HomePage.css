@@ -12,6 +12,18 @@
   font-family: 'REM', sans-serif;
 }
 
+/* grid style pour gerer les petits ecrans*/
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
 .home-page .profile-pic {
   border-radius: 50%;
   width: 200px;

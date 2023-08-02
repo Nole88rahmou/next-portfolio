@@ -13,7 +13,18 @@
   background-color: black;
   font-family: 'REM', sans-serif;
 }
+/* grid style pour gerer les petits ecrans*/
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
 
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
 .ProjectPage .project-link:hover {
   background-color: chocolate;
   color: black;
