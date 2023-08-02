@@ -9,4 +9,20 @@
 
 body {
   background-color: dimgray;
+
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* CSS pour les téléphones mobiles */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 5px;
+    }
+  }
 }
