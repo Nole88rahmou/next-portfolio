@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: black;
+  color: chocolate;
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.header .nav-links a {
+  color: chocolate;
+  text-decoration: none;
+}
+
+.header .nav-links a:hover {
+  color: #ddd;
+}
