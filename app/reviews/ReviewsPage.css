@@ -1,0 +1,29 @@
+/* ReviewsPage.css */
+
+.reviews-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  text-align: center;
+}
+
+.reviews-page .reviews-link {
+  display: flex;
+  margin: 10px 0;
+  text-decoration: none;
+  color: chocolate;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  background-color: black;
+}
+
+.reviews-page .reviews-link:hover {
+  background-color: #333;
+  color: #fff;
+}
