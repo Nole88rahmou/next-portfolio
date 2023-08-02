@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
 .project {
   display: flex;
   flex-direction: column;
@@ -29,6 +30,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
+  font-family: 'REM', sans-serif;
 }
 
 .project-description {
@@ -36,6 +38,7 @@
   color: #666;
   font-size: 1em;
   margin-bottom: 20px;
+  font-family: 'REM', sans-serif;
 }
 
 .project-tech-list {

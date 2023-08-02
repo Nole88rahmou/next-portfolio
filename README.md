@@ -1,3 +1,43 @@
+# Explication avec captures d'ecran:
+
+## Page d'acceuil:
+
+![Capture d'écran de la page d'accueil](./public/CapturesDecran/PageD'acceuil.png)
+
+## Page de contact:
+
+![Capture d'écran de la page de contact](./public/CapturesDecran/PageContact.png)
+
+## Page de temoignages:
+
+![Capture d'écran des pages de temoignages ](./public/CapturesDecran/AcceuilTemoignage.png)
+
+La page d'acceuil pour temoignage qui montre les liens vers les deux autres pages de la section de temoignages
+
+## Page de temoignages:
+
+![Capture d'écran des pages de temoignages](./public/CapturesDecran/AjouterTemoignage.png)
+
+page pour ajouter un temoignage, avec validation
+
+## Page de temoignages:
+
+![Capture d'écran des pages de temoignages](./public/CapturesDecran/VoirTemoignage.png)
+
+On peut voir les temoignages ainsi que les modifiers ou supprimer, j'ai mis un temoignage constant que sera toujours afficher lors de demarrage de l'application
+
+## Page de projet:
+
+![Capture d'écran de la page de projet](./public/CapturesDecran/PageProjet.png)
+
+une page d'acceuil pour les projet qui montre les liens vers mes deux projets
+
+## Page de projet1:
+
+![Capture d'écran](./public/CapturesDecran/projet1.png)
+
+la page pour la description d'un projet, ainsi que les technologies utilises
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -26,9 +66,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
