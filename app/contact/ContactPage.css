@@ -1,0 +1,45 @@
+/* ContactPage.css */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+label {
+  width: 100%;
+  margin: 10px 0;
+  color: aliceblue;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  resize: none;
+  color: aliceblue;
+  background-color: black;
+}
+
+textarea {
+  height: 70px;
+}
+
+button {
+  background-color: chocolate;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
